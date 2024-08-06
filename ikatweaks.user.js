@@ -1769,10 +1769,10 @@
 
         var tradegoodImagesCache = {};
         var tradegoodImagePaths = {
-            '1': '/skin/resources/icon_wine.png',
-            '2': '/skin/resources/icon_marble.png',
-            '3': '/skin/resources/icon_glass.png',
-            '4': '/skin/resources/icon_sulfur.png'
+            '1': '/cdn/all/both/resources/icon_wine.png',
+            '2': '/cdn/all/both/resources/icon_marble.png',
+            '3': '/cdn/all/both/resources/icon_glass.png',
+            '4': '/cdn/all/both/resources/icon_sulfur.png'
         };
         function getTradegoodImage(k, cityId, tradegood) {
             var cacheKey = k+cityId;
@@ -1906,8 +1906,8 @@
             #js_citySelectContainer span a {display:inline;}
             .dropdownContainer.city_select li.active{font-weight:bold;}
             #CityListing_sortingList button {cursor:pointer;display:inline-block;border:none;width:17px;height:17px;}
-            #CityListing_sortingList button.up {background:url(/skin/friends/button17_up.png) no-repeat center 0px;}
-            #CityListing_sortingList button.down {background:url(/skin/friends/button17_down.png) no-repeat center 0px;}
+            #CityListing_sortingList button.up {background:url(cdn/all/both/friends/button17_up.png) no-repeat center 0px;}
+            #CityListing_sortingList button.down {background:url(cdn/all/both/friends/button17_down.png) no-repeat center 0px;}
         `);
 
 /*
@@ -2067,14 +2067,14 @@
             cities: {
 
                 maleMayor: {
-                    normal: '/skin/layout/advisors/mayor.png',
-                    active: '/skin/layout/advisors/mayor_active.png',
-                    mini  : '/skin/minimized/tradeAdvisor.png',
+                    normal: 'cdn/all/both/layout/advisors/mayor.png',
+                    active: 'cdn/all/both/layout/advisors/mayor_active.png',
+                    mini  : 'cdn/all/both/minimized/tradeAdvisor.png',
                     fixes : 'background-position-y:1px;',
                 },
                 maleMayorPremium: {
-                    normal: '/skin/layout/advisors/mayor_premium.png',
-                    active: '/skin/layout/advisors/mayor_premium_active.png',
+                    normal: 'cdn/all/both/layout/advisors/mayor_premium.png',
+                    active: 'cdn/all/both/layout/advisors/mayor_premium_active.png',
                     mini  : 'https://raw.githubusercontent.com/YveOne/Userscript-IkaTweaks/master/images/maleMayorPremiumMini.png',
                     fixes : 'background-position-y:1px;',
                 },
@@ -2094,12 +2094,12 @@
                 barbarianMayor: {
                     normal: 'https://gf2.geo.gfsrv.net/cdndd/4038e23b2dee65425ff19452e43b60.png',
                     active: 'https://gf2.geo.gfsrv.net/cdnda/97f887e4a5e0dea4c974fe888adc07.png',
-                    mini  : '/skin/minimized/tradeAdvisor.png',
+                    mini  : 'cdn/all/both/minimized/tradeAdvisor.png',
                 },
                 barbarianMayorPremium: {
                     normal: 'https://gf1.geo.gfsrv.net/cdnf2/8cddf3b88425522f2cec8bf954ff67.png',
                     active: 'https://gf2.geo.gfsrv.net/cdn4e/0aca9eab9f2e921abc609bf18bc72e.png',
-                    mini  : '/skin/minimized/tradeAdvisor.png',
+                    mini  : 'cdn/all/both/minimized/tradeAdvisor.png',
                 },
 
                 onePieceLuffy: {
@@ -2113,16 +2113,16 @@
             military: {
 
                 maleGeneral: {
-                    normal: '/skin/layout/advisors/general.png',
-                    active: '/skin/layout/advisors/general_active.png',
-                    alert : '/skin/layout/advisors/general_alert.png',
-                    mini  : '/skin/minimized/militaryAdvisor.png',
+                    normal: '/cdn/all/both/layout/advisors/general.png',
+                    active: '/cdn/all/both/layout/advisors/general_active.png',
+                    alert : '/cdn/all/both/layout/advisors/general_alert.png',
+                    mini  : '/cdn/all/both/minimized/militaryAdvisor.png',
                     fixes : 'background-position-y:1px;',
                 },
                 maleGeneralPremium: {
-                    normal: '/skin/layout/advisors/general_premium.png',
-                    active: '/skin/layout/advisors/general_premium_active.png',
-                    alert : '/skin/layout/advisors/general_premium_alert.png',
+                    normal: '/cdn/all/both/layout/advisors/general_premium.png',
+                    active: '/cdn/all/both/layout/advisors/general_premium_active.png',
+                    alert : '/cdn/all/both/layout/advisors/general_premium_alert.png',
                     mini  : 'https://raw.githubusercontent.com/YveOne/Userscript-IkaTweaks/master/images/maleGeneralPremiumMini.png',
                     fixes : 'background-position-y:1px;',
                 },
@@ -2131,26 +2131,26 @@
                     normal: 'https://gf1.geo.gfsrv.net/cdn93/de97d2e03efcb617b55e554872bd7f.png',
                     active: 'https://gf3.geo.gfsrv.net/cdn59/9945e4257ea5fa1115c780b61c6f87.png',
                     alert : 'https://gf2.geo.gfsrv.net/cdn4b/cb7e1b73321ca334edb3f7cde014a4.png',
-                    mini  : '/skin/minimized/militaryAdvisor.png',
+                    mini  : '/cdn/all/both/minimized/militaryAdvisor.png',
                 }, 
                 femaleGeneralPremium: {
                     normal: 'https://gf2.geo.gfsrv.net/cdn7d/846622eb7b6d22b4d8e9ed67fe9540.png',
                     active: 'https://gf3.geo.gfsrv.net/cdnbf/be172f27c65aa08dad2492c7a688dc.png',
                     alert : 'https://gf1.geo.gfsrv.net/cdnc9/300f3eb409c5547ecef988ee60ec63.png',
-                    mini  : '/skin/minimized/militaryAdvisor.png',
+                    mini  : '/cdn/all/both/minimized/militaryAdvisor.png',
                 },
 
                 barbarianGeneral: {
                     normal: 'https://gf3.geo.gfsrv.net/cdn2f/64face27ba8bb80615bc7ae1bf5e08.png',
                     active: 'https://gf2.geo.gfsrv.net/cdnde/7b6e769a93988aa4f305a8b17ca45c.png',
                     alert : 'https://gf2.geo.gfsrv.net/cdn1a/9696dae76e5ab16f4604fa311cb87d.png',
-                    mini  : '/skin/minimized/militaryAdvisor.png',
+                    mini  : '/cdn/all/both/minimized/militaryAdvisor.png',
                 },
                 barbarianGeneralPremium: {
                     normal: 'https://gf1.geo.gfsrv.net/cdnc5/f907938b1897e3791c4b99c56c26cd.png',
                     active: 'https://gf2.geo.gfsrv.net/cdna5/a14f7b05b3a33f47ff0a5689de6c94.png',
                     alert : 'https://gf3.geo.gfsrv.net/cdne6/76ef247198b1a3493b59d5fb8512da.png',
-                    mini  : '/skin/minimized/militaryAdvisor.png',
+                    mini  : '/cdn/all/both/minimized/militaryAdvisor.png',
                 },
 
                 onePieceZoro: {
@@ -2165,14 +2165,14 @@
             research: {
 
                 maleScientist: {
-                    normal: '/skin/layout/advisors/scientist.png',
-                    active: '/skin/layout/advisors/scientist_active.png',
-                    mini  : '/skin/minimized/researchAdvisor.png',
+                    normal: '/cdn/all/both/layout/advisors/scientist.png',
+                    active: '/cdn/all/both/layout/advisors/scientist_active.png',
+                    mini  : '/cdn/all/both/minimized/researchAdvisor.png',
                     fixes : 'background-position-y:1px;',
                 },
                 maleScientistPremium: {
-                    normal: '/skin/layout/advisors/scientist_premium.png',
-                    active: '/skin/layout/advisors/scientist_premium_active.png',
+                    normal: '/cdn/all/both/layout/advisors/scientist_premium.png',
+                    active: '/cdn/all/both/layout/advisors/scientist_premium_active.png',
                     mini  : 'https://raw.githubusercontent.com/YveOne/Userscript-IkaTweaks/master/images/maleScientistPremiumMini.png',
                     fixes : 'background-position-y:1px;',
                 },
@@ -2180,24 +2180,24 @@
                 femaleScientist: {
                     normal: 'https://gf3.geo.gfsrv.net/cdn2c/718516ef80f6b471d46829db736645.png',
                     active: 'https://gf1.geo.gfsrv.net/cdnf6/195cc0fee967c828a16cbbe6771927.png',
-                    mini  : '/skin/minimized/researchAdvisor.png',
+                    mini  : '/cdn/all/both/minimized/researchAdvisor.png',
                 },
                 femaleScientistPremium: {
                     normal: 'https://gf2.geo.gfsrv.net/cdn4e/b5ac699f00b625287c7cca2ee4113c.png',
                     active: 'https://gf3.geo.gfsrv.net/cdn22/17ad363fb799ac7813e8f66a99b865.png',
-                    mini  : '/skin/minimized/researchAdvisor.png',
+                    mini  : '/cdn/all/both/minimized/researchAdvisor.png',
                 },
 
                 barbarianScientist: {
                     normal: 'https://gf3.geo.gfsrv.net/cdne0/568aff5ecbf5a5d9b24cc109fb40bc.png',
                     active: 'https://gf2.geo.gfsrv.net/cdn48/fd3a7d5df4256d5ee7792f3196ecbd.png',
-                    mini  : '/skin/minimized/researchAdvisor.png',
+                    mini  : '/cdn/all/both/minimized/researchAdvisor.png',
                 },
 
                 barbarianScientistPremium: {
                     normal: 'https://gf2.geo.gfsrv.net/cdn7a/eb29418610d19bfd0e87574abbaaef.png',
                     active: 'https://gf3.geo.gfsrv.net/cdn8d/d2b95e6eeb9191f0a207adbe1d9994.png',
-                    mini  : '/skin/minimized/researchAdvisor.png',
+                    mini  : '/cdn/all/both/minimized/researchAdvisor.png',
                 },
 
                 onePieceUsopp: {
@@ -2211,14 +2211,14 @@
             diplomacy: {
 
                 maleDiplomat: {
-                    normal: '/skin/layout/advisors/diplomat.png',
-                    active: '/skin/layout/advisors/diplomat_active.png',
-                    mini  : '/skin/minimized/diplomacyAdvisor.png',
+                    normal: '/cdn/all/both/layout/advisors/diplomat.png',
+                    active: '/cdn/all/both/layout/advisors/diplomat_active.png',
+                    mini  : '/cdn/all/both/minimized/diplomacyAdvisor.png',
                     fixes : 'background-position-y:1px;',
                 },
                 maleDiplomatPremium: {
-                    normal: '/skin/layout/advisors/diplomat_premium.png',
-                    active: '/skin/layout/advisors/diplomat_premium_active.png',
+                    normal: '/cdn/all/both/layout/advisors/diplomat_premium.png',
+                    active: '/cdn/all/both/layout/advisors/diplomat_premium_active.png',
                     mini  : 'https://raw.githubusercontent.com/YveOne/Userscript-IkaTweaks/master/images/maleDiplomatPremiumMini.png',
                     fixes : 'background-position-y:1px;',
                 },
@@ -2226,23 +2226,23 @@
                 femaleDiplomat: {
                     normal: 'https://gf2.geo.gfsrv.net/cdn79/34aae35dbef7ac0666cd5d4e795fec.png',
                     active: 'https://gf3.geo.gfsrv.net/cdn22/9183f61d09d24f5fae2394bc970bbf.png',
-                    mini  : '/skin/minimized/diplomacyAdvisor.png',
+                    mini  : '/cdn/all/both/minimized/diplomacyAdvisor.png',
                 },
                 femaleDiplomatPremium: {
                     normal: 'https://gf1.geo.gfsrv.net/cdn9c/f57b89fb383d7071aabaff522582a0.png',
                     active: 'https://gf1.geo.gfsrv.net/cdn32/70449a533dbc49e268644784739e29.png',
-                    mini  : '/skin/minimized/diplomacyAdvisor.png',
+                    mini  : '/cdn/all/both/minimized/diplomacyAdvisor.png',
                 },
 
                 barbarianDiplomat: {
                     normal: 'https://gf1.geo.gfsrv.net/cdn35/e6b1edfb47413ca3125ade683d12fe.png',
                     active: 'https://gf1.geo.gfsrv.net/cdn6e/a250bc22b3802efc5aa663c0c9e2e8.png',
-                    mini  : '/skin/minimized/diplomacyAdvisor.png',
+                    mini  : '/cdn/all/both/minimized/diplomacyAdvisor.png',
                 },
                 barbarianDiplomatPremium: {
                     normal: 'https://gf3.geo.gfsrv.net/cdn2d/6ed7dcb6cac8e54520f1019b8f5056.png',
                     active: 'https://gf2.geo.gfsrv.net/cdn7a/27a589adb2ace5d7067db7b954736d.png',
-                    mini  : '/skin/minimized/diplomacyAdvisor.png',
+                    mini  : '/cdn/all/both/minimized/diplomacyAdvisor.png',
                 },
 
                 onePieceNami: {
@@ -2508,12 +2508,12 @@
             #city #locations .position{17}{left:1088px;top:892px}
             #city #locations .position{18}{left:1332px;top:585px}
             #city #locations .position{19}{left:1320px;top:203px}
-            #city #locations .position{1}.port .buildingimg{background-image:url(skin/img/city/port_r.png)}
-            #city #locations .position{2}.port .buildingimg{background-image:url(skin/img/city/port_l.png)}
-            #city #locations .position{1}.port.busy .buildingimg{background-image:url(skin/img/city/port_r_mit_schiff.png)}
-            #city #locations .position{2}.port.busy .buildingimg{background-image:url(skin/img/city/port_l_mit_schiff.png)}
-            #city #locations .position{1}.shipyard .buildingimg{background-image:url(skin/img/city/shipyard_r.png)}
-            #city #locations .position{2}.shipyard .buildingimg{background-image:url(skin/img/city/shipyard_l.png)}
+            #city #locations .position{1}.port .buildingimg{background-image:url(cdn/all/both/img/city/port_r.png)}
+            #city #locations .position{2}.port .buildingimg{background-image:url(cdn/all/both/img/city/port_l.png)}
+            #city #locations .position{1}.port.busy .buildingimg{background-image:url(cdn/all/both/img/city/port_r_mit_schiff.png)}
+            #city #locations .position{2}.port.busy .buildingimg{background-image:url(cdn/all/both/img/city/port_l_mit_schiff.png)}
+            #city #locations .position{1}.shipyard .buildingimg{background-image:url(cdn/all/both/img/city/shipyard_r.png)}
+            #city #locations .position{2}.shipyard .buildingimg{background-image:url(cdn/all/both/img/city/shipyard_l.png)}
             #city #locations .position{1}.port .hover{background-image:url(//gf1.geo.gfsrv.net/cdn00/1e6f6c206e6bf006790b2062fba85d.png)}
             #city #locations .position{2}.port .hover{background-image:url(//gf2.geo.gfsrv.net/cdn48/5f95f6e13b94a5fedae8aca896d3d1.png)}
             #city #locations .position{1}.shipyard .hover{background-image:url(//gf1.geo.gfsrv.net/cdn3f/9f9aabfcb932d03424c287a9743315.png)}
@@ -2521,8 +2521,8 @@
             #city #locations .position{1}.port .img_pos{left:-45px;top:-48px;width:209px;height:148px}
             #city #locations .position{2}.port .img_pos{left:-57px;top:-43px;width:209px;height:148px}
             #city #locations .shipyard .img_pos{left:-70px;top:-64px;width:191px;height:126px}
-            #city .animated #locations .position{1}.port.busy .buildingimg{background-image:url(skin/img/city/hafen_r_neu.png)}
-            #city .animated #locations .position{2}.port.busy .buildingimg{background:url(skin/img/city/hafen_l_neu.png) 5px 0px}
+            #city .animated #locations .position{1}.port.busy .buildingimg{background-image:url(cdn/all/both/img/city/hafen_r_neu.png)}
+            #city .animated #locations .position{2}.port.busy .buildingimg{background:url(cdn/all/both/img/city/hafen_l_neu.png) 5px 0px}
         `;
 
         var cssPositionsElement;
