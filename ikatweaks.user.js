@@ -2719,14 +2719,14 @@
                             var position = data.position[workingPositionAliases[i]];
                             if(position.building == "buildingGround land")
                             {
+                                buildingButtons[i].attr('class', 'button_building groundLand').attr('title', LocalizationStrings.free_building_space);
+                                if (data.lockedPosition)
+                            {
                                 if(data.lockedPosition[i])
                                 {
                                     buildingButtons[i].attr('class', 'button_building groundLocked').attr('title', data.lockedPosition[i]);
                                 }
-                                else
-                                {
-                                    buildingButtons[i].attr('class', 'button_building groundLand').attr('title', LocalizationStrings.free_building_space);
-                                }
+                            }
                             }
                             else
                             {
