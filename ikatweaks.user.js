@@ -2425,10 +2425,10 @@
     IkaTweaks.setModule('MoveBuildings', function(modData, modDataSave){
         if(typeof modData.customPositions           == 'undefined') modData.customPositions         = {};
 
-        var moveBuildingsBackground = 'https://raw.githubusercontent.com/YveOne/Userscript-IkaTweaks/master/images/moveBuildingsBackground.jpg';
+        var moveBuildingsBackground = 'https://i.imgur.com/52G9UTA.jpeg';
         var moveBuildingsEmptyButton = 'https://raw.githubusercontent.com/YveOne/Userscript-IkaTweaks/master/images/moveBuildingsEmptyButton.png';
 
-        const BUILDING_POSITIONS_COUNT = 20;
+        const BUILDING_POSITIONS_COUNT = 25;
         function buildEmptyPositions() {
             return new Array(BUILDING_POSITIONS_COUNT).fill(null).map((v, i)=>(i));
         }
@@ -2456,6 +2456,11 @@
             #MoveBuildings #buildingDetail .button_building[position="17"] {left: 385px;top: 352px;}
             #MoveBuildings #buildingDetail .button_building[position="18"] {left: 492px;top: 223px;}
             #MoveBuildings #buildingDetail .button_building[position="19"] {left: 492px;top:  54px;}
+            #MoveBuildings #buildingDetail .button_building[position="20"] {left: 548px;top: 235px;}
+            #MoveBuildings #buildingDetail .button_building[position="21"] {left: 540px;top: 302px;}
+            #MoveBuildings #buildingDetail .button_building[position="22"] {left: 488px;top: 277px;}
+            #MoveBuildings #buildingDetail .button_building[position="23"] {left: 116px;top: 243px;}
+            #MoveBuildings #buildingDetail .button_building[position="24"] {left: 125px;top: 380px;}
             #MoveBuildings .building_nav .button_building.groundShore,
             #MoveBuildings .building_nav .button_building.groundLand,
             #MoveBuildings .building_nav .button_building.groundLocked,
@@ -2508,6 +2513,11 @@
             #city #locations .position{17}{left:1088px;top:892px}
             #city #locations .position{18}{left:1332px;top:585px}
             #city #locations .position{19}{left:1320px;top:203px}
+            #city #locations .position{20}{left:1490px;top:636px}
+            #city #locations .position{21}{left:1442px;top:763px}
+            #city #locations .position{22}{left:1319px;top:699px}
+            #city #locations .position{23}{left:439px;top:634px}
+            #city #locations .position{24}{left:573px;top:981px}
             #city #locations .position{1}.port .buildingimg{background-image:url(cdn/all/both/img/city/port_r.png)}
             #city #locations .position{2}.port .buildingimg{background-image:url(cdn/all/both/img/city/port_l.png)}
             #city #locations .position{1}.port.busy .buildingimg{background-image:url(cdn/all/both/img/city/port_r_mit_schiff.png)}
@@ -2624,6 +2634,8 @@
             restricted[1] = [1,2];
             restricted[2] = [1,2];
             restricted[14] = [14];
+            restricted[17] = [17];
+            restricted[24] = [24];
 
             function allowDrop(event) {
                 event = event.originalEvent;
