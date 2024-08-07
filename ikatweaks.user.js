@@ -2717,7 +2717,7 @@
                         for(var i=0; i<data.position.length; i++)
                         {
                             var position = data.position[workingPositionAliases[i]];
-                            if(position.building.startsWith('buildingGround'))
+                            if(position.building == "buildingGround land")
                             {
                                 if(data.lockedPosition[i])
                                 {
