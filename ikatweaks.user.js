@@ -2720,17 +2720,38 @@
                             if(position.building == "buildingGround land")
                             {
                                 buildingButtons[i].attr('class', 'button_building groundLand').attr('title', LocalizationStrings.free_building_space);
+                                console.log(position.building,i,"custom(free slot)")
                                 if (data.lockedPosition)
                             {
                                 if(data.lockedPosition[i])
                                 {
                                     buildingButtons[i].attr('class', 'button_building groundLocked').attr('title', data.lockedPosition[i]);
+                                    console.log(position.building,i,"custom(LOCKED)")
                                 }
                             }
                             }
                             else
+                                if(position.building == "buildingGround sea")
+                                {
+                                    buildingButtons[i].attr('class', 'button_building groundLand').attr('title', LocalizationStrings.free_building_space);//needs change from ground to sea
+                                    console.log(position.building,i,"custom(sea)")
+                                }
+                            else
+                                if(position.building == "buildingGround shore")
+                                {
+                                    buildingButtons[i].attr('class', 'button_building groundLand').attr('title', LocalizationStrings.free_building_space);//needs change from ground to shore
+                                    console.log(position.building,i,"custom(shore)")
+                                }
+                            else
+                                if(position.building == "buildingGround dockyard")
+                                {
+                                    buildingButtons[i].attr('class', 'button_building groundLand').attr('title', LocalizationStrings.free_building_space);//needs change from ground to dockyard
+                                    console.log(position.building,i,"custom(dockyard)")
+                                }
+                            else
                             {
                                 buildingButtons[i].attr('class', 'button_building '+position.building).attr('title', position.name+' ('+position.level+')');
+                                console.log(position.building,i)
                             }
                             buildingButtons[i].attr('position', i);
                         }
